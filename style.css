@@ -1,0 +1,296 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: serif;
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.line-break {
+  width: 17rem;
+}
+
+.text {
+  font-size: 1.8rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  line-height: 2.7rem;
+}
+
+.text-primary {
+  color: hsl(0, 0%, 98%);
+  max-width: 60rem;
+}
+
+.text-secondary {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.466);
+  max-width: 35rem;
+}
+
+.heading-primary {
+  max-width: 60rem;
+  font-size: 8rem;
+  line-height: 8rem;
+  margin-bottom: 3rem;
+}
+
+.heading-secondary {
+  max-width: 52rem;
+  line-height: 6rem;
+  font-size: 6rem;
+}
+
+.heading-tertiary {
+  font-size: 3.4rem;
+  color: hsl(270, 9%, 17%);
+  margin-bottom: 2.3rem;
+}
+
+.subheading {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.466);
+  margin-bottom: 2.5rem;
+  z-index: 4;
+}
+
+/* ---------------------------------------
+-------------------Grid------------------- */
+.grid {
+  display: grid;
+}
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gap-m {
+  gap: 3rem;
+}
+
+/* ---------------------------------------
+-------------------Header----------------- */
+
+.header {
+  max-width: 144rem;
+  padding: 3rem 10rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  gap: 2.3rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: rgba(0, 0, 0, 0.466);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* ---------------------------------------
+-------------------Hero------------------- */
+.hero {
+  background-color: hsl(256, 26%, 20%);
+  max-width: 144rem;
+  padding: 10rem;
+  height: 65rem;
+  position: relative;
+  /* overflow-x: hidden; */
+}
+
+.bg-pattern-intro-right {
+  z-index: 3;
+  position: absolute;
+  top: -8.1rem;
+  right: -7rem;
+}
+
+.bg-pattern-intro-left {
+  z-index: 2;
+  position: absolute;
+  left: -5rem;
+  bottom: -50%;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+/* ---------------------------------------
+-------------------Features--------------- */
+.features {
+  max-width: 144rem;
+  padding: 30rem 10rem 10rem;
+}
+
+.icon-snappy,
+.icon-affordable,
+.icon-people {
+  margin-bottom: 4rem;
+}
+
+/* ---------------------------------------
+----------------cta-section--------------- */
+.cta-section {
+  padding: 10rem;
+}
+
+.wrapper {
+  padding: 6.5rem 8rem;
+  background-color: hsl(256, 26%, 20%);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bg-pattern-how-we-work {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* ---------------------------------------
+------------------footer------------------ */
+.footer {
+  padding: 0 10rem;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.bg-pattern-footer {
+  position: absolute;
+  left: 0;
+}
+
+.container {
+  padding: 6rem 0 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-2 {
+  padding: 4rem 0 5rem;
+}
+
+.logo {
+  z-index: 4;
+}
+
+.social-media__outreach-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer_nav-cols-list {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-list-link {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: bold 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  color: hsl(270, 9%, 17%);
+}
+/* ---------------------------------------
+-------------------utility---------------- */
+
+.center-v {
+  align-self: center;
+}
+
+.mt-xl {
+  margin-top: 10rem;
+}
+
+.md-m {
+  margin-bottom: 5rem;
+}
+
+.md-sm {
+  margin-bottom: 4rem;
+}
+
+.white {
+  color: white;
+}
+
+.dark {
+  color: hsl(270, 9%, 17%);
+}
+
+.width {
+  width: 18rem;
+  height: 4.5rem;
+  padding: 2rem 0;
+}
+
+/* ---------------------------------------
+-------------------Btn-------------------- */
+
+.btn {
+  padding: 0.8rem 3rem;
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.btn-primary {
+  color: hsl(270, 9%, 17%);
+  border: 0.2rem solid hsl(270, 9%, 17%);
+}
+
+.btn-secondary {
+  color: hsl(0, 0%, 98%);
+  border: 0.2rem solid hsl(0, 0%, 98%);
+}
+
+/* <div data-aos="fade-up"
+     data-aos-duration="3000">
+</div> */
+
+
+
+
+
+
+
+
+
